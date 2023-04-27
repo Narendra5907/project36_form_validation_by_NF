@@ -11,6 +11,6 @@ def Student(request):
         if SFD.is_valid():
             return HttpResponse(str(SFD.cleaned_data))
         else:
-            return HttpResponse('it is not valid data')
+            return HttpResponse('Data is not valid')
 
     return render(request,'Student.html',d)
